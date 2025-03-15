@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: auto;
+    margin: auto;
+}
+
+.screen{
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    height: 91vh;
+}
+
+.screen--icons{
+    display: grid;
+    align-items: center;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.icon p{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    margin-top: 5px;
+    position: absolute;
+   
+}
+
+.icon:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 3px;
+    height: 45px;
+    width: 45px;
+    padding: 8px;
+}
+
+.icon:hover p{
+    align-items: center;
+}
+
+.icon--bar{
+    height: 30px;
+    width: 30px;
+    color: white;
+    margin: 10px 8px;
+    padding: 0px 8px;
+    transition: 0.3s;
+}
+
+.icon--bar:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0px 8px;
+}
+
+.bar{
+    background-color: rgb(56, 56, 56);
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.bar--right{
+    display: flex;
+}
+
+.bar--left{
+    
+}
+
+.calculator{
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    width: 350px;
+    height: 500px;
+    background: grey;
+    color: white;
+    display: none; /* Inicialmente oculta */
+    flex-direction: column;    
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px black;
+    transition: 0.3s;
+}
+
+.bar--calc{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(44, 44, 44);
+    width: 350px;
+    height: 30px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.close{
+    width: 20px;
+    padding: 0px 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.mini{
+    width: 20px;
+    padding: 0px 5px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.expand{
+    width: 20px;
+    padding: 0px 5px;
+    color: green;
+    cursor: pointer;
+}
+
+.calc--screen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(214, 214, 214);
+    height: 80px;
+    width: 250px;
+    border-radius: 3px;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    display: flex;
+    color: black;
+    font-size: 30px;
+    box-shadow: 0px 0px 3px black;
+    padding-right: 10px;
+}
+
+.keys--calc{
+    display: grid;
+    background-color: rgb(39, 39, 39);
+    height: 300px;
+    width: 250px;
+    grid-template-columns: auto;
+    grid-template-rows: 6;
+    color: black;
+    align-items: center;
+}
+
+.enter{
+    grid-column: 1/4;
+    grid-row: 6;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    color: white;
+}
+
+.enter:active{
+    background-color:black;
+}
+
+.number{
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.number:active{
+    background-color:black;
+}
+
+.operator{
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator:active{
+    background-color:black;
+}
+
+.clean{
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.clean:active{
+    background-color:black;
+}
+
+.operation {
+    color: black;
+}
